@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RecordsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hall of Fame"
+        android:textSize="28sp" />
+
+    <!-- la cabecera de la tabla la pongo fija en el xml -->
+    <TableLayout
+        android:id="@+id/tablaRecords"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:stretchColumns="0,1">
+
+        <TableRow>
+            <TextView
+                android:padding="16dp"
+                android:text="Nombre"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Intentos"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver a jugar" />
+
+</LinearLayout>
